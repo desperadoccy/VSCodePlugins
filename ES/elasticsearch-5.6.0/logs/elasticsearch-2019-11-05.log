@@ -1,0 +1,61 @@
+[2019-11-05T21:04:54,093][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-11-05T21:04:54,428][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] using [1] data paths, mounts [[Program (D:)]], net usable_space [131gb], net total_space [345.5gb], spins? [unknown], types [NTFS]
+[2019-11-05T21:04:54,429][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-11-05T21:04:54,478][INFO ][o.e.n.Node               ] node name [49BegR_] derived from node ID [49BegR_7TCOC4PaD2gKeDA]; set [node.name] to override
+[2019-11-05T21:04:54,478][INFO ][o.e.n.Node               ] version[5.6.0], pid[5664], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/12.0.1/12.0.1+12]
+[2019-11-05T21:04:54,479][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\MobileFile\ES\elasticsearch-5.6.0]
+[2019-11-05T21:04:59,377][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [aggs-matrix-stats]
+[2019-11-05T21:04:59,377][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [ingest-common]
+[2019-11-05T21:04:59,378][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-expression]
+[2019-11-05T21:04:59,378][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-groovy]
+[2019-11-05T21:04:59,378][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-mustache]
+[2019-11-05T21:04:59,379][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-painless]
+[2019-11-05T21:04:59,379][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [parent-join]
+[2019-11-05T21:04:59,379][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [percolator]
+[2019-11-05T21:04:59,379][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [reindex]
+[2019-11-05T21:04:59,380][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty3]
+[2019-11-05T21:04:59,380][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty4]
+[2019-11-05T21:04:59,381][INFO ][o.e.p.PluginsService     ] [49BegR_] no plugins loaded
+[2019-11-05T21:05:07,370][INFO ][o.e.d.DiscoveryModule    ] [49BegR_] using discovery type [zen]
+[2019-11-05T21:05:08,227][INFO ][o.e.n.Node               ] initialized
+[2019-11-05T21:05:08,227][INFO ][o.e.n.Node               ] [49BegR_] starting ...
+[2019-11-05T21:05:09,446][INFO ][o.e.t.TransportService   ] [49BegR_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-11-05T21:05:12,677][INFO ][o.e.c.s.ClusterService   ] [49BegR_] new_master {49BegR_}{49BegR_7TCOC4PaD2gKeDA}{8BOJHQsaQ5GmmXwxAMWIaA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-11-05T21:05:13,706][INFO ][o.e.h.n.Netty4HttpServerTransport] [49BegR_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-11-05T21:05:13,706][INFO ][o.e.n.Node               ] [49BegR_] started
+[2019-11-05T21:05:13,770][INFO ][o.e.g.GatewayService     ] [49BegR_] recovered [1] indices into cluster_state
+[2019-11-05T21:05:16,056][INFO ][o.e.c.r.a.AllocationService] [49BegR_] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[code_recommend][1]] ...]).
+[2019-11-05T21:11:10,095][INFO ][o.e.c.m.MetaDataMappingService] [49BegR_] [code_recommend/tx2YK7myTPGdXs-qk9u2hg] create_mapping [JAVA]
+[2019-11-05T21:11:56,031][INFO ][o.e.c.m.MetaDataMappingService] [49BegR_] [code_recommend/tx2YK7myTPGdXs-qk9u2hg] create_mapping [java]
+[2019-11-05T21:14:43,447][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-11-05T21:14:43,448][INFO ][o.e.n.Node               ] [49BegR_] stopping ...
+[2019-11-05T21:14:45,978][INFO ][o.e.n.Node               ] [49BegR_] stopped
+[2019-11-05T21:14:45,979][INFO ][o.e.n.Node               ] [49BegR_] closing ...
+[2019-11-05T21:14:45,986][INFO ][o.e.n.Node               ] [49BegR_] closed
+[2019-11-05T21:20:36,941][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-11-05T21:20:37,298][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] using [1] data paths, mounts [[Office (D:)]], net usable_space [250.5gb], net total_space [310.5gb], spins? [unknown], types [NTFS]
+[2019-11-05T21:20:37,298][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-11-05T21:20:37,360][INFO ][o.e.n.Node               ] node name [49BegR_] derived from node ID [49BegR_7TCOC4PaD2gKeDA]; set [node.name] to override
+[2019-11-05T21:20:37,360][INFO ][o.e.n.Node               ] version[5.6.0], pid[7648], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_211/25.211-b12]
+[2019-11-05T21:20:37,360][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\科创\ES\elasticsearch-5.6.0]
+[2019-11-05T21:20:38,783][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [aggs-matrix-stats]
+[2019-11-05T21:20:38,784][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [ingest-common]
+[2019-11-05T21:20:38,784][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-expression]
+[2019-11-05T21:20:38,784][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-groovy]
+[2019-11-05T21:20:38,785][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-mustache]
+[2019-11-05T21:20:38,785][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-painless]
+[2019-11-05T21:20:38,785][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [parent-join]
+[2019-11-05T21:20:38,785][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [percolator]
+[2019-11-05T21:20:38,785][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [reindex]
+[2019-11-05T21:20:38,786][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty3]
+[2019-11-05T21:20:38,786][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty4]
+[2019-11-05T21:20:38,786][INFO ][o.e.p.PluginsService     ] [49BegR_] no plugins loaded
+[2019-11-05T21:20:42,009][INFO ][o.e.d.DiscoveryModule    ] [49BegR_] using discovery type [zen]
+[2019-11-05T21:20:42,683][INFO ][o.e.n.Node               ] initialized
+[2019-11-05T21:20:42,683][INFO ][o.e.n.Node               ] [49BegR_] starting ...
+[2019-11-05T21:20:44,628][INFO ][o.e.t.TransportService   ] [49BegR_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-11-05T21:20:47,751][INFO ][o.e.c.s.ClusterService   ] [49BegR_] new_master {49BegR_}{49BegR_7TCOC4PaD2gKeDA}{5e2_3LY-RRGjnLWrKl9Vhg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-11-05T21:20:48,064][INFO ][o.e.g.GatewayService     ] [49BegR_] recovered [1] indices into cluster_state
+[2019-11-05T21:20:48,976][INFO ][o.e.h.n.Netty4HttpServerTransport] [49BegR_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-11-05T21:20:48,976][INFO ][o.e.n.Node               ] [49BegR_] started
+[2019-11-05T21:20:49,091][INFO ][o.e.c.r.a.AllocationService] [49BegR_] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[code_recommend][4]] ...]).

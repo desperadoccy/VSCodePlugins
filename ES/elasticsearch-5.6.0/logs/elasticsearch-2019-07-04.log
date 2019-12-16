@@ -1,0 +1,27 @@
+[2019-07-04T13:30:30,295][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-07-04T13:30:30,582][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] using [1] data paths, mounts [[Program (D:)]], net usable_space [207gb], net total_space [345.5gb], spins? [unknown], types [NTFS]
+[2019-07-04T13:30:30,582][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-07-04T13:30:31,567][INFO ][o.e.n.Node               ] node name [49BegR_] derived from node ID [49BegR_7TCOC4PaD2gKeDA]; set [node.name] to override
+[2019-07-04T13:30:31,568][INFO ][o.e.n.Node               ] version[5.6.0], pid[4544], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_201/25.201-b09]
+[2019-07-04T13:30:31,569][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\MobileFile\elasticsearch-5.6.0]
+[2019-07-04T13:30:33,066][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [aggs-matrix-stats]
+[2019-07-04T13:30:33,066][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [ingest-common]
+[2019-07-04T13:30:33,067][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-expression]
+[2019-07-04T13:30:33,067][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-groovy]
+[2019-07-04T13:30:33,067][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-mustache]
+[2019-07-04T13:30:33,068][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-painless]
+[2019-07-04T13:30:33,068][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [parent-join]
+[2019-07-04T13:30:33,068][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [percolator]
+[2019-07-04T13:30:33,068][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [reindex]
+[2019-07-04T13:30:33,068][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty3]
+[2019-07-04T13:30:33,069][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty4]
+[2019-07-04T13:30:33,069][INFO ][o.e.p.PluginsService     ] [49BegR_] no plugins loaded
+[2019-07-04T13:30:36,738][INFO ][o.e.d.DiscoveryModule    ] [49BegR_] using discovery type [zen]
+[2019-07-04T13:30:37,447][INFO ][o.e.n.Node               ] initialized
+[2019-07-04T13:30:37,448][INFO ][o.e.n.Node               ] [49BegR_] starting ...
+[2019-07-04T13:30:38,301][INFO ][o.e.t.TransportService   ] [49BegR_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-07-04T13:30:41,413][INFO ][o.e.c.s.ClusterService   ] [49BegR_] new_master {49BegR_}{49BegR_7TCOC4PaD2gKeDA}{S3yt-mX4Q9KNa9R3S2Kh7w}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-07-04T13:30:41,953][INFO ][o.e.h.n.Netty4HttpServerTransport] [49BegR_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-07-04T13:30:41,956][INFO ][o.e.n.Node               ] [49BegR_] started
+[2019-07-04T13:30:42,217][INFO ][o.e.g.GatewayService     ] [49BegR_] recovered [7] indices into cluster_state
+[2019-07-04T13:30:51,557][INFO ][o.e.c.r.a.AllocationService] [49BegR_] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[methodbody][3]] ...]).

@@ -1,0 +1,2091 @@
+[2019-09-18T18:37:31,465][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-09-18T18:37:31,700][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] using [1] data paths, mounts [[Program (D:)]], net usable_space [130.5gb], net total_space [345.5gb], spins? [unknown], types [NTFS]
+[2019-09-18T18:37:31,700][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-09-18T18:37:31,877][INFO ][o.e.n.Node               ] node name [49BegR_] derived from node ID [49BegR_7TCOC4PaD2gKeDA]; set [node.name] to override
+[2019-09-18T18:37:31,877][INFO ][o.e.n.Node               ] version[5.6.0], pid[4748], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/12.0.1/12.0.1+12]
+[2019-09-18T18:37:31,878][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\MobileFile\elasticsearch-5.6.0]
+[2019-09-18T18:37:34,110][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [aggs-matrix-stats]
+[2019-09-18T18:37:34,110][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [ingest-common]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-expression]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-groovy]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-mustache]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-painless]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [parent-join]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [percolator]
+[2019-09-18T18:37:34,111][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [reindex]
+[2019-09-18T18:37:34,112][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty3]
+[2019-09-18T18:37:34,112][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty4]
+[2019-09-18T18:37:34,112][INFO ][o.e.p.PluginsService     ] [49BegR_] no plugins loaded
+[2019-09-18T18:37:37,136][INFO ][o.e.d.DiscoveryModule    ] [49BegR_] using discovery type [zen]
+[2019-09-18T18:37:37,895][INFO ][o.e.n.Node               ] initialized
+[2019-09-18T18:37:37,895][INFO ][o.e.n.Node               ] [49BegR_] starting ...
+[2019-09-18T18:37:38,563][INFO ][o.e.t.TransportService   ] [49BegR_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-09-18T18:37:41,646][INFO ][o.e.c.s.ClusterService   ] [49BegR_] new_master {49BegR_}{49BegR_7TCOC4PaD2gKeDA}{BiATQXa-SO-DmXxiQhtbYQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-09-18T18:37:42,046][INFO ][o.e.h.n.Netty4HttpServerTransport] [49BegR_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-09-18T18:37:42,047][INFO ][o.e.n.Node               ] [49BegR_] started
+[2019-09-18T18:37:42,110][INFO ][o.e.g.GatewayService     ] [49BegR_] recovered [1] indices into cluster_state
+[2019-09-18T18:37:43,502][INFO ][o.e.c.r.a.AllocationService] [49BegR_] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[code_recommend][2]] ...]).
+[2019-09-18T18:40:31,224][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][2], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=nbKHR09rTdKFQYJbHsAWQw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[_all], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "from" : 0,
+  "size" : 50,
+  "query" : {
+    "bool" : {
+      "should" : [
+        {
+          "match_all" : {
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "version" : true,
+  "sort" : [
+    {
+      "api_slnvocation" : {
+        "order" : "desc"
+      }
+    }
+  ],
+  "aggregations" : { }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T18:40:31,224][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][1], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=meOsJcgBQkq_F6_95bADHQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[_all], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "from" : 0,
+  "size" : 50,
+  "query" : {
+    "bool" : {
+      "should" : [
+        {
+          "match_all" : {
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "version" : true,
+  "sort" : [
+    {
+      "api_slnvocation" : {
+        "order" : "desc"
+      }
+    }
+  ],
+  "aggregations" : { }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T18:40:31,224][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][3], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=Fx-gi7fVQaia473ZYyGwwg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[_all], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "from" : 0,
+  "size" : 50,
+  "query" : {
+    "bool" : {
+      "should" : [
+        {
+          "match_all" : {
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "version" : true,
+  "sort" : [
+    {
+      "api_slnvocation" : {
+        "order" : "desc"
+      }
+    }
+  ],
+  "aggregations" : { }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T18:40:31,224][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][0], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=3x5E52LiSTGkNRYWQ4RY0Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[_all], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "from" : 0,
+  "size" : 50,
+  "query" : {
+    "bool" : {
+      "should" : [
+        {
+          "match_all" : {
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "version" : true,
+  "sort" : [
+    {
+      "api_slnvocation" : {
+        "order" : "desc"
+      }
+    }
+  ],
+  "aggregations" : { }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T18:40:31,224][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][4], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=u9Zb7VlnSwi6fVQv5KJ-kg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[_all], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "from" : 0,
+  "size" : 50,
+  "query" : {
+    "bool" : {
+      "should" : [
+        {
+          "match_all" : {
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "version" : true,
+  "sort" : [
+    {
+      "api_slnvocation" : {
+        "order" : "desc"
+      }
+    }
+  ],
+  "aggregations" : { }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T18:40:31,535][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] All shards failed for phase: [query]
+org.elasticsearch.ElasticsearchException$1: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:618) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:126) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:241) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:46) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.InitialSearchPhase$1.onFailure(InitialSearchPhase.java:169) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1067) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1171) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1149) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:655) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [api_slnvocation] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.FieldSortBuilder.build(FieldSortBuilder.java:277) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.sort.SortBuilder.buildSort(SortBuilder.java:156) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 3 more
+[2019-09-18T19:19:01,786][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][3], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=Fx-gi7fVQaia473ZYyGwwg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:01,786][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][2], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=nbKHR09rTdKFQYJbHsAWQw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:01,786][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][1], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=meOsJcgBQkq_F6_95bADHQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:01,786][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][0], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=3x5E52LiSTGkNRYWQ4RY0Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:01,786][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][4], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=u9Zb7VlnSwi6fVQv5KJ-kg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:02,089][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-09-18T19:19:02,538][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x88d60846, L:/127.0.0.1:9300 - R:/127.0.0.1:57752]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x3d5920aa, L:/127.0.0.1:9300 - R:/127.0.0.1:57753]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x2c42ecd0, L:/127.0.0.1:9300 - R:/127.0.0.1:57758]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,540][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xbbc28ffd, L:/127.0.0.1:9300 - R:/127.0.0.1:57748]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x893835f1, L:/127.0.0.1:9300 - R:/127.0.0.1:57749]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x460d8ba0, L:/127.0.0.1:9300 - R:/127.0.0.1:57751]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,538][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xdf419ab5, L:/127.0.0.1:9300 - R:/127.0.0.1:57757]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xf11424a4, L:/127.0.0.1:9300 - R:/127.0.0.1:57750]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,538][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x0bbb2eba, L:/127.0.0.1:9300 - R:/127.0.0.1:57754]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x5b4de067, L:/127.0.0.1:9300 - R:/127.0.0.1:57760]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x4cc86e03, L:/127.0.0.1:9300 - R:/127.0.0.1:57756]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x24ac8d8a, L:/127.0.0.1:9300 - R:/127.0.0.1:57755]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:02,537][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x35f81e8f, L:/127.0.0.1:9300 - R:/127.0.0.1:57759]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:44,908][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][4], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=u9Zb7VlnSwi6fVQv5KJ-kg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:44,908][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][1], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=meOsJcgBQkq_F6_95bADHQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:44,908][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][0], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=3x5E52LiSTGkNRYWQ4RY0Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:44,908][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][2], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=nbKHR09rTdKFQYJbHsAWQw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:44,908][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] [code_recommend][3], node[49BegR_7TCOC4PaD2gKeDA], [P], s[STARTED], a[id=Fx-gi7fVQaia473ZYyGwwg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[code_recommend], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[java], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "query_string" : {
+      "query" : "+",
+      "default_field" : "whole_method_body",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [49BegR_][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:835) ~[?:?]
+[2019-09-18T19:19:45,206][DEBUG][o.e.a.s.TransportSearchAction] [49BegR_] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: Failed to parse query [+]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse '+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    <TERM> ...
+    "*" ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x02e4004a, L:/127.0.0.1:9300 - R:/127.0.0.1:57878]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,624][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x2cc9c436, L:/127.0.0.1:9300 - R:/127.0.0.1:57874]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,623][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xf67a56f7, L:/127.0.0.1:9300 - R:/127.0.0.1:57883]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,626][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x4d1b1ac8, L:/127.0.0.1:9300 - R:/127.0.0.1:57872]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,623][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xa9e44991, L:/127.0.0.1:9300 - R:/127.0.0.1:57877]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x1cd72963, L:/127.0.0.1:9300 - R:/127.0.0.1:57882]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x0e1e2b15, L:/127.0.0.1:9300 - R:/127.0.0.1:57871]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,623][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x2c7035fb, L:/127.0.0.1:9300 - R:/127.0.0.1:57876]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x84dfc677, L:/127.0.0.1:9300 - R:/127.0.0.1:57879]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xec4e6e7e, L:/127.0.0.1:9300 - R:/127.0.0.1:57875]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0xbbcd1877, L:/127.0.0.1:9300 - R:/127.0.0.1:57873]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,623][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x21ac2236, L:/127.0.0.1:9300 - R:/127.0.0.1:57880]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T19:19:45,622][WARN ][o.e.t.n.Netty4Transport  ] [49BegR_] exception caught on transport layer [[id: 0x3e6d323b, L:/127.0.0.1:9300 - R:/127.0.0.1:57881]], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.13.Final.jar:4.1.13.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.13.Final.jar:4.1.13.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+[2019-09-18T20:22:04,758][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-09-18T20:22:04,768][INFO ][o.e.n.Node               ] [49BegR_] stopping ...
+[2019-09-18T20:22:04,841][INFO ][o.e.n.Node               ] [49BegR_] stopped
+[2019-09-18T20:22:04,841][INFO ][o.e.n.Node               ] [49BegR_] closing ...
+[2019-09-18T20:22:04,862][INFO ][o.e.n.Node               ] [49BegR_] closed

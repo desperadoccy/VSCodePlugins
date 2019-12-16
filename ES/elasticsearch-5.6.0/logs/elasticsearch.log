@@ -1,0 +1,32 @@
+[2019-11-17T15:39:25,320][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-11-17T15:39:25,591][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] using [1] data paths, mounts [[Office (D:)]], net usable_space [249.5gb], net total_space [310.5gb], spins? [unknown], types [NTFS]
+[2019-11-17T15:39:25,591][INFO ][o.e.e.NodeEnvironment    ] [49BegR_] heap size [1.9gb], compressed ordinary object pointers [true]
+[2019-11-17T15:39:25,699][INFO ][o.e.n.Node               ] node name [49BegR_] derived from node ID [49BegR_7TCOC4PaD2gKeDA]; set [node.name] to override
+[2019-11-17T15:39:25,700][INFO ][o.e.n.Node               ] version[5.6.0], pid[12196], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_211/25.211-b12]
+[2019-11-17T15:39:25,701][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\科创\ES\elasticsearch-5.6.0]
+[2019-11-17T15:39:27,334][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [aggs-matrix-stats]
+[2019-11-17T15:39:27,334][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [ingest-common]
+[2019-11-17T15:39:27,334][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-expression]
+[2019-11-17T15:39:27,335][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-groovy]
+[2019-11-17T15:39:27,335][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-mustache]
+[2019-11-17T15:39:27,335][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [lang-painless]
+[2019-11-17T15:39:27,335][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [parent-join]
+[2019-11-17T15:39:27,335][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [percolator]
+[2019-11-17T15:39:27,336][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [reindex]
+[2019-11-17T15:39:27,336][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty3]
+[2019-11-17T15:39:27,336][INFO ][o.e.p.PluginsService     ] [49BegR_] loaded module [transport-netty4]
+[2019-11-17T15:39:27,336][INFO ][o.e.p.PluginsService     ] [49BegR_] no plugins loaded
+[2019-11-17T15:39:30,299][INFO ][o.e.d.DiscoveryModule    ] [49BegR_] using discovery type [zen]
+[2019-11-17T15:39:30,843][INFO ][o.e.n.Node               ] initialized
+[2019-11-17T15:39:30,843][INFO ][o.e.n.Node               ] [49BegR_] starting ...
+[2019-11-17T15:39:32,270][INFO ][o.e.t.TransportService   ] [49BegR_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-11-17T15:39:35,382][INFO ][o.e.c.s.ClusterService   ] [49BegR_] new_master {49BegR_}{49BegR_7TCOC4PaD2gKeDA}{QigSed2LSFeL7yZgcl9aOw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-11-17T15:39:35,700][INFO ][o.e.g.GatewayService     ] [49BegR_] recovered [1] indices into cluster_state
+[2019-11-17T15:39:36,355][INFO ][o.e.h.n.Netty4HttpServerTransport] [49BegR_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-11-17T15:39:36,355][INFO ][o.e.n.Node               ] [49BegR_] started
+[2019-11-17T15:39:36,599][INFO ][o.e.c.r.a.AllocationService] [49BegR_] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[code_recommend][2]] ...]).
+[2019-11-17T15:55:01,157][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-11-17T15:55:01,158][INFO ][o.e.n.Node               ] [49BegR_] stopping ...
+[2019-11-17T15:55:01,186][INFO ][o.e.n.Node               ] [49BegR_] stopped
+[2019-11-17T15:55:01,186][INFO ][o.e.n.Node               ] [49BegR_] closing ...
+[2019-11-17T15:55:01,193][INFO ][o.e.n.Node               ] [49BegR_] closed
